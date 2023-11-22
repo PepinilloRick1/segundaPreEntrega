@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+    background-image: url(../img/fondogrmadn\ -redeando.blogspot.jpg.crdownload);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Slabo 27px', serif;
+    font-weight: normal;
+    font-size: 2rem;
+}
+body .contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 5fr 0.7fr;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+.conteiner{
+ width: 850px;
+ height: 800px;
+ border: white 2px solid;
+ overflow: auto;
+}
+.conteiner img{
+width: 200px;
+padding: 5px;
+border-style: groove;
+}
+
+.header{
+    grid-area: header;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.header .logo img{
+    border-radius: 20px;
+}
+.header .logo img{
+    padding: 10px;
+}
+.header .menu ul{
+    list-style-type: none;
+    display: flex;
+}
+.header .menu a{
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 20px;
+}
+.header .menu a:hover{
+    background-color: rgb(2, 2, 2);
+    color: rgb(255, 255, 255);
+    
+    
+}
+
+.main{
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 1.2rem;
+    opacity: 0.7;
+   
+}
+.main article .principal{
+    margin-bottom: 20px;
+}
+.main article .principal video{
+    vertical-align: auto;
+    width: auto;
+}
+.main article{
+    margin: 20px;
+    font-weight: normal;
+}
+.main article h2{
+    text-align: center;
+}
+.main article p{
+    margin: 20px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+.aside{
+    grid-area: aside;
+    font-size: 2rem;
+    text-align: center;
+    color: aliceblue;
+    padding: 40px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.7;
+    
+    
+}
+.aside .aside1{
+    background-color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: auto;
+    
+}
+.aside1 a:hover{
+    font-weight: bold;
+    color: cadetblue;
+    background-color: bisque;
+}
+
+.aside1:active{
+    background-color: rgb(31, 32, 32);
+    color: rgb(255, 255, 255);
+}
+footer{
+    grid-area: footer;
+    margin: 20px auto;
+    background-color: #2a2a2b;
+    opacity: .7;
+    padding: 15px;
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    border-radius: 30px;
+    background-position: left;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.footer .redesSociales{
+    margin-left: 20px;
+    width: 30px;
+    
+}
+.footer .redesSociales img{
+    opacity: .7;
+    
+}
+.redesSociales .redes{
+    margin: 15px;
+    display: inline-flex;
+    
+}
